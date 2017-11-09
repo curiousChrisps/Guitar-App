@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gWT-fh-UV6">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="oOI-8z-N0P">
+            <objects>
+                <navigationController id="gWT-fh-UV6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="15" id="SGh-Ah-dlt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="pal-zV-5bm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cz2-7U-zPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-334" y="258"/>
+        </scene>
+        <!--L!veG.-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Lp-Fi-El8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hzo-hM-Gbn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sda-8n-Q6M" customClass="GuitarStringsView">
+                                <rect key="frame" x="20" y="400" width="280" height="153"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="stringCount">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVp-9z-oW0" customClass="FretBoardView">
+                                <rect key="frame" x="20" y="72" width="280" height="320"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prg-gm-3g0" userLabel="0">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pah-pk-aUr" userLabel="1">
+                                        <rect key="frame" x="48" y="0.0" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6T-9X-sIa" userLabel="2">
+                                        <rect key="frame" x="94" y="0.0" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjO-9X-1I7" userLabel="3">
+                                        <rect key="frame" x="140" y="0.0" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDM-Co-QPg" userLabel="4">
+                                        <rect key="frame" x="186" y="0.0" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5E-e0-4jv" userLabel="5">
+                                        <rect key="frame" x="232" y="0.0" width="48" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrA-cP-87U" userLabel="6">
+                                        <rect key="frame" x="0.0" y="80" width="48" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfW-3m-yCO" userLabel="7">
+                                        <rect key="frame" x="48" y="80" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZV-HG-kZb" userLabel="8">
+                                        <rect key="frame" x="94" y="80" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlT-2p-lsj" userLabel="9">
+                                        <rect key="frame" x="140" y="80" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bM-Kh-YOE" userLabel="10">
+                                        <rect key="frame" x="186" y="80" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdQ-u0-JhX" userLabel="11">
+                                        <rect key="frame" x="232" y="80" width="48" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI9-u2-QES" userLabel="12">
+                                        <rect key="frame" x="0.0" y="160" width="48" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfJ-F7-Og5" userLabel="13">
+                                        <rect key="frame" x="48" y="160" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg7-u3-jYP" userLabel="14">
+                                        <rect key="frame" x="94" y="160" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lap-ZV-PMx" userLabel="15">
+                                        <rect key="frame" x="140" y="160" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FH-Qe-HFf" userLabel="16">
+                                        <rect key="frame" x="186" y="160" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3I-CY-bd8" userLabel="17">
+                                        <rect key="frame" x="232" y="160" width="48" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fu-PA-Dqj" userLabel="18">
+                                        <rect key="frame" x="0.0" y="240" width="48" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NX-ch-en8" userLabel="19">
+                                        <rect key="frame" x="48" y="240" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2S-Kg-c87" userLabel="20">
+                                        <rect key="frame" x="94" y="240" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmu-Td-jUm" userLabel="21">
+                                        <rect key="frame" x="140" y="240" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55f-K4-7sq" userLabel="22">
+                                        <rect key="frame" x="186" y="240" width="46" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpY-6U-d6w" userLabel="23">
+                                        <rect key="frame" x="232" y="240" width="48" height="80"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qVp-9z-oW0" firstAttribute="leading" secondItem="3" secondAttribute="leadingMargin" constant="4" id="78B-uC-1DN"/>
+                            <constraint firstItem="qVp-9z-oW0" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" id="BT3-xR-bCy"/>
+                            <constraint firstItem="sda-8n-Q6M" firstAttribute="trailing" secondItem="qVp-9z-oW0" secondAttribute="trailing" id="DxR-0a-gun"/>
+                            <constraint firstItem="Hzo-hM-Gbn" firstAttribute="top" secondItem="sda-8n-Q6M" secondAttribute="bottom" constant="15" id="Exp-f0-9db"/>
+                            <constraint firstItem="sda-8n-Q6M" firstAttribute="top" secondItem="3" secondAttribute="top" constant="400" id="Qkn-f9-Ogy"/>
+                            <constraint firstItem="qVp-9z-oW0" firstAttribute="top" secondItem="5Lp-Fi-El8" secondAttribute="bottom" constant="8" symbolic="YES" id="aIO-N4-jew"/>
+                            <constraint firstItem="sda-8n-Q6M" firstAttribute="top" secondItem="qVp-9z-oW0" secondAttribute="bottom" constant="8" symbolic="YES" id="gDu-71-2OK"/>
+                            <constraint firstItem="sda-8n-Q6M" firstAttribute="leading" secondItem="qVp-9z-oW0" secondAttribute="leading" id="snD-zt-wl9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="L!veG." id="asf-E6-6HJ">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="FH1-CS-dfM">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="cMR-EU-wOs">
+                                <rect key="frame" x="282" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="IPi-DP-Glg" kind="push" id="Bcs-xT-IGu"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="FretBoardView" destination="qVp-9z-oW0" id="1vr-HK-7dp"/>
+                        <outlet property="fretBoardView" destination="qVp-9z-oW0" id="wld-sD-UrC"/>
+                        <outlet property="guitarStringView" destination="sda-8n-Q6M" id="vKd-iK-wwU"/>
+                        <outletCollection property="zones" destination="prg-gm-3g0" id="Zc4-mZ-kbo"/>
+                        <outletCollection property="zones" destination="pah-pk-aUr" id="frE-w6-344"/>
+                        <outletCollection property="zones" destination="R6T-9X-sIa" id="mZq-JT-NQR"/>
+                        <outletCollection property="zones" destination="ZjO-9X-1I7" id="7Nf-UV-gFg"/>
+                        <outletCollection property="zones" destination="wDM-Co-QPg" id="i8V-FB-mHe"/>
+                        <outletCollection property="zones" destination="Q5E-e0-4jv" id="afE-KE-k9B"/>
+                        <outletCollection property="zones" destination="DrA-cP-87U" id="Peh-76-4fu"/>
+                        <outletCollection property="zones" destination="TfW-3m-yCO" id="9YH-iB-m1R"/>
+                        <outletCollection property="zones" destination="fZV-HG-kZb" id="XVW-Tj-S1B"/>
+                        <outletCollection property="zones" destination="xlT-2p-lsj" id="y5z-IX-UDv"/>
+                        <outletCollection property="zones" destination="4bM-Kh-YOE" id="DL4-Hl-iOs"/>
+                        <outletCollection property="zones" destination="CdQ-u0-JhX" id="a1f-qG-MNy"/>
+                        <outletCollection property="zones" destination="QI9-u2-QES" id="CjC-91-gR1"/>
+                        <outletCollection property="zones" destination="NfJ-F7-Og5" id="xe4-30-rgm"/>
+                        <outletCollection property="zones" destination="Bg7-u3-jYP" id="2zX-ax-YA7"/>
+                        <outletCollection property="zones" destination="Lap-ZV-PMx" id="biD-qZ-KXt"/>
+                        <outletCollection property="zones" destination="9FH-Qe-HFf" id="H1A-pp-IZz"/>
+                        <outletCollection property="zones" destination="H3I-CY-bd8" id="qaK-cZ-b4n"/>
+                        <outletCollection property="zones" destination="7fu-PA-Dqj" id="yu7-Vf-4vh"/>
+                        <outletCollection property="zones" destination="6NX-ch-en8" id="ZUX-JQ-2ug"/>
+                        <outletCollection property="zones" destination="O2S-Kg-c87" id="857-Hb-7r8"/>
+                        <outletCollection property="zones" destination="Lmu-Td-jUm" id="cJi-y4-Xdz"/>
+                        <outletCollection property="zones" destination="55f-K4-7sq" id="9ev-4i-4yV"/>
+                        <outletCollection property="zones" destination="zpY-6U-d6w" id="sU8-Kv-aPc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="258"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="NaO-dV-HNO">
+            <objects>
+                <viewController title="Info" id="IPi-DP-Glg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ehU-hz-l3t"/>
+                        <viewControllerLayoutGuide type="bottom" id="IFk-KX-CmY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QqU-5p-ljK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="L!veG_Screenshot.png" translatesAutoresizingMaskIntoConstraints="NO" id="BYe-jA-fEZ">
+                                <rect key="frame" x="20" y="383" width="280" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="kGs-mb-r3R"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to play the L!veG:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0Z-cC-Qie">
+                                <rect key="frame" x="20" y="72" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="X70-Wk-ywh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t8F-Tf-gHy">
+                                <rect key="frame" x="20" y="110" width="280" height="265"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The guitar works best if you hold the phone horizontally. Simply swipe across the strings in the brown field to let them ring. To change the pitch or grb chords, touch the strings in the light-brown field: the fretboard. A little white glowing circle will show you, which position is being touched.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E0Z-cC-Qie" firstAttribute="trailing" secondItem="t8F-Tf-gHy" secondAttribute="trailing" id="24u-cI-tAw"/>
+                            <constraint firstItem="E0Z-cC-Qie" firstAttribute="centerX" secondItem="QqU-5p-ljK" secondAttribute="centerX" id="3FM-EN-IcQ"/>
+                            <constraint firstItem="t8F-Tf-gHy" firstAttribute="top" secondItem="E0Z-cC-Qie" secondAttribute="bottom" constant="8" symbolic="YES" id="GuI-Y7-aYr"/>
+                            <constraint firstItem="t8F-Tf-gHy" firstAttribute="leading" secondItem="BYe-jA-fEZ" secondAttribute="leading" id="LQF-aX-MoG"/>
+                            <constraint firstItem="E0Z-cC-Qie" firstAttribute="leading" secondItem="t8F-Tf-gHy" secondAttribute="leading" id="Q4N-iw-aCB"/>
+                            <constraint firstItem="BYe-jA-fEZ" firstAttribute="trailing" secondItem="t8F-Tf-gHy" secondAttribute="trailing" id="Qo8-Cz-634"/>
+                            <constraint firstItem="E0Z-cC-Qie" firstAttribute="top" secondItem="ehU-hz-l3t" secondAttribute="bottom" constant="8" symbolic="YES" id="R4r-wm-prx"/>
+                            <constraint firstAttribute="bottom" secondItem="BYe-jA-fEZ" secondAttribute="bottom" constant="20" symbolic="YES" id="jfE-5E-Ttz"/>
+                            <constraint firstItem="E0Z-cC-Qie" firstAttribute="leading" secondItem="QqU-5p-ljK" secondAttribute="leadingMargin" constant="4" id="v3z-lG-DlI"/>
+                            <constraint firstItem="BYe-jA-fEZ" firstAttribute="top" secondItem="t8F-Tf-gHy" secondAttribute="bottom" constant="8" symbolic="YES" id="xJZ-Va-0p0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="w5j-FL-Fu5">
+                        <barButtonItem key="rightBarButtonItem" title="About" id="zMK-R5-UWM">
+                            <connections>
+                                <segue destination="sMo-hJ-efG" kind="push" id="1tl-y7-1y4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wFD-jm-R6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550" y="258"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="JtX-cf-bhj">
+            <objects>
+                <viewController title="About" id="sMo-hJ-efG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZFw-gf-RFj"/>
+                        <viewControllerLayoutGuide type="bottom" id="LV6-9k-W5H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NkP-h6-mXd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About L!veG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqF-I4-zt8">
+                                <rect key="frame" x="20" y="72" width="144" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jEZ-yZ-jTy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2016 UWE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nod-eV-2hM">
+                                <rect key="frame" x="20" y="110" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DuU-Ro-biK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVN-Jv-ZkF">
+                                <rect key="frame" x="172" y="72" width="128" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="sJq-c3-6fD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jhO-YU-2hS">
+                                <rect key="frame" x="20" y="150" width="280" height="398"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">L!veG is a new way to experience your mobile device. With L!veG you always have your guitar with you. At home, on the go, on travels, everywhere! You can simply put on headphones and try some new chords, or just play along to your favourite song on the radio.  The possibilities are wide already. But the development will bring exciting new features in future: a capoG function with which you can tune your L!veG up (or down) as you wish.  Also, a learnG feature will be introduced soon. With learnG you can learn chords and key relationships.  So stay tuned for updates and new versions. And most importantly: HAVE FUN!     All rights reserved.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nod-eV-2hM" firstAttribute="top" secondItem="WqF-I4-zt8" secondAttribute="bottom" constant="8" symbolic="YES" id="7wa-vN-tH5"/>
+                            <constraint firstItem="jVN-Jv-ZkF" firstAttribute="top" secondItem="WqF-I4-zt8" secondAttribute="top" id="FyK-7d-1no"/>
+                            <constraint firstItem="Nod-eV-2hM" firstAttribute="centerX" secondItem="NkP-h6-mXd" secondAttribute="centerX" id="JFN-r9-aBP"/>
+                            <constraint firstItem="WqF-I4-zt8" firstAttribute="leading" secondItem="NkP-h6-mXd" secondAttribute="leadingMargin" constant="4" id="Je3-B9-2zj"/>
+                            <constraint firstItem="jVN-Jv-ZkF" firstAttribute="trailing" secondItem="Nod-eV-2hM" secondAttribute="trailing" id="Klw-qc-Ten"/>
+                            <constraint firstItem="WqF-I4-zt8" firstAttribute="leading" secondItem="Nod-eV-2hM" secondAttribute="leading" id="L9q-bb-HXj"/>
+                            <constraint firstItem="Nod-eV-2hM" firstAttribute="top" secondItem="jVN-Jv-ZkF" secondAttribute="bottom" constant="8" symbolic="YES" id="XVy-QK-u5L"/>
+                            <constraint firstItem="jhO-YU-2hS" firstAttribute="leading" secondItem="Nod-eV-2hM" secondAttribute="leading" id="YMP-xY-7H8"/>
+                            <constraint firstItem="jVN-Jv-ZkF" firstAttribute="leading" secondItem="WqF-I4-zt8" secondAttribute="trailing" constant="8" symbolic="YES" id="k1y-yg-1C3"/>
+                            <constraint firstItem="jhO-YU-2hS" firstAttribute="top" secondItem="Nod-eV-2hM" secondAttribute="bottom" constant="10" id="nU0-9S-wSo"/>
+                            <constraint firstItem="Nod-eV-2hM" firstAttribute="trailing" secondItem="jhO-YU-2hS" secondAttribute="trailing" id="tSz-Kz-103"/>
+                            <constraint firstAttribute="bottom" secondItem="jhO-YU-2hS" secondAttribute="bottom" constant="20" symbolic="YES" id="tbM-Ov-jHM"/>
+                            <constraint firstItem="WqF-I4-zt8" firstAttribute="top" secondItem="ZFw-gf-RFj" secondAttribute="bottom" constant="8" symbolic="YES" id="xTq-LO-mlq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="25l-zv-aL3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0Y-Az-w5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="258"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="L!veG_Screenshot.png" width="320" height="213"/>
+    </resources>
+</document>
